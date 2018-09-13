@@ -1,0 +1,87 @@
+//头部
+@import url("header.less");
+// 特色
+#feature{
+    margin-top: 20px;
+    .row{
+        &>div{
+           background: url("../../../images/feature01.png") no-repeat left center;
+           height: 65px;
+           text-indent: 80px;
+           margin-bottom: 10px;
+
+           h2{
+               font-size: 18px;
+               font-weight: bold;
+               padding: 0px;
+               margin: 0px;
+           }
+        }
+        &>div:nth-of-type(2){
+            background:  url("../../../images/feature02.png") no-repeat left center;
+        }
+        &>div:nth-of-type(3){
+            background:  url("../../../images/feature03.png") no-repeat left center;
+        }
+    }
+}
+//首页样板重置
+.panel-default{
+    border: none;
+    &>.panel-heading{
+        background-color:transparent; 
+        margin: 0;
+        padding: 0; 
+        h2{
+            border-bottom: solid 3px #2e8ece;
+            margin: 0px;
+            padding:  10px 0;
+            color: #2e8ece;
+            font-size: 24px;
+        }
+        a{
+            margin-top: 20px; 
+        }
+       
+    } 
+    .panel-body{
+        padding: 20px 0;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                border-bottom: dotted 1px #ccc;
+                line-height: 40px; 
+            a{
+                color: #666;
+                &:hover{
+                    color: @colorBule;
+                    text-decoration: none;
+                }
+            }
+            }
+        }
+    }
+}
+.panel{
+    border: none;
+    box-shadow: none;
+}
+.bs-example{
+    margin-top: 10px;
+    .table-hover{
+        thead{
+             color: #999;
+        }
+       
+    }
+}
+//断点
+@media all and(max-width:520px){
+    .hideTitle{
+        display: none;
+    }
+}
+//页脚
+@import url("footer.less");

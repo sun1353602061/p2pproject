@@ -1,0 +1,37 @@
+// 定义公共
+@colorWidth:#fff;
+@colorBule:#00a8ff;
+// 头部样式
+.navbar-inverse{
+    .navbar-brand{
+        color: @colorWidth;
+        font-size: 24px;
+        .glyphicon-phone-alt{
+            font-size: 18px;
+            margin-right: 8px; 
+        }
+    }
+    // 导航
+    .navbar-right{
+        &>li{
+           &>a{
+               color:@colorWidth;
+               &:hover{
+               color:@colorBule;
+             }
+           } 
+        }
+    }
+}
+.navbar-default .navbar-nav>li>a{
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    &:hover{
+        background-color:#e7e7e7; 
+        color:@colorBule;
+    }
+}
+.tooltip img{
+    width: 100px;
+}
