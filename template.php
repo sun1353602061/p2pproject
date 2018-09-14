@@ -13,7 +13,7 @@
 <body>
     <!-- 头部 -->
     <?php
-      require_once("./heater.php")
+      require_once("./header.php")
     ?>
     <div class="container" id="box">
         <h1>我阿里</h1>

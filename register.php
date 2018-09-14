@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <!-- 引入编译和压缩后的css文件 -->
     <link rel="stylesheet" href="./dist/css/minCss/regLogin.min.css">
-    <!-- 引入登陆页面样式 -->
-    <link rel="stylesheet" href="./dist/css/minCss/login.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -22,13 +20,13 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header clearfix">
       <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
-      <p class="pull-left">用户登陆</p>
+      <p class="pull-left">用户注册</p>
     </div>
   
 </nav>
     <div class="panel panel-default container">
     <div class="panel-heading">
-        <h3 class="panel-title">用户登陆</h3>
+        <h3 class="panel-title">用户注册</h3>
     </div>
     <div class="panel-body">
     <form class="form-horizontal">
@@ -44,12 +42,37 @@
       <input type="password" class="form-control" name="Password" placeholder="请输入密码">
     </div>
   </div>
-  
-  
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">确认密码:</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" name="repeatPassword" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">手机号码:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="mobile" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">电子邮件:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="emil" placeholder="">
+    </div>
+  </div>
   <div class="form-group">
     <div class="col-sm-offset-3 col-sm-9">
-      <button type="submit" class="btn btn-success">登陆</button>
-      <a href="./register.php" class="hideTitle">新用户，马上注册</a>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">确认阅读
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-success col-sm-offset-3">确认注册</button>
+       
     </div>
   </div>
 </form>

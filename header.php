@@ -14,10 +14,14 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">首页</a></li>
+              <li><a href="./index.php">首页</a></li>
+              <!-- 登陆后 -->
               <li><a href="#">小强</a></li>
               <li><a href="#">赶快充值</a></li>
               <li><a href="#">注销</a></li>
+              <!-- 登陆前 -->
+              <li><a href="./register.php">注册</a></li>
+              <li><a href="./login.php">登陆</a></li>
               <li><a href="#">帮助</a></li>
               <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./images/contract.png'/>">联系客户</a></li>
             </ul>

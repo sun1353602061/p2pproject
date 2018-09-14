@@ -13,7 +13,7 @@
 <body>
     <!-- 头部 -->
     <?php
-      require_once("./heater.php")
+      require_once("header.php")
     ?>
   <!-- 导航 -->
 <nav class="navbar-default">
@@ -22,8 +22,6 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
     </div>
-
-   
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">首页</a></li>
         <li><a href="#">我要投资</a></li>
@@ -71,15 +69,15 @@
         <div class="row">
           <div class="col-sm-4 col-xs-12">
             <h2>投资理财</h2>
-            <p>稳定投资、高收益、短期限，易融贷先行赔付</p>
+            <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
           </div>
           <div class="col-sm-4 col-xs-12">
             <h2>投资理财</h2>
-            <p>稳定投资、高收益、短期限，易融贷先行赔付</p>
+            <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
           </div>
           <div class="col-sm-4 col-xs-12">
           <h2>投资理财</h2>
-          <p>稳定投资、高收益、短期限，易融贷先行赔付</p>
+            <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
           </div>
         </div>
     </div>
@@ -205,7 +203,7 @@
     </div>
     <!-- 页脚 -->
     <?php
-      require_once("./footer.php")
+      require_once("footer.php")
     ?>
     <!-- jquery样式 -->
     <script src="./lib/jquery/jquery.min.js"></script>
