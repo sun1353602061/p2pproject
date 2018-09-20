@@ -1,0 +1,138 @@
+// 引入页头样式
+@import url("./header.less");
+
+//模板自己的样式定义
+#personal{
+    margin-top: 10px;
+
+    //左侧
+    .panel-body{
+        ul{
+            li{
+                line-height: 30px;
+            }
+        }
+    }
+
+    //右侧
+    #mainContent{
+        .panel-body{
+            padding: 10px 30px;
+           
+            //1
+            #userHeader{
+                border-bottom: solid 1px #ccc;
+
+                #userHeaderLeft{
+                    padding: 0px;
+
+                    img{
+                        max-width: 90px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            //2
+            #money{
+                font-size: 18px;
+                padding: 15px 0px;
+            }
+
+            //3
+            #myButton{
+                text-align: center;
+            }
+        }
+    }
+
+}
+#collapseOne{
+.panel-body{
+    padding: 0;
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+           line-height: 30px;
+           padding: 10px 0 10px 40px;
+           
+           &:hover{
+            background-color: #337ab7;
+        } 
+        }
+        
+    }
+} 
+
+}
+
+.panel-default{
+    .panel-body{
+         padding: 0;
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+           line-height: 30px;
+           padding: 10px 0 10px 40px;
+           
+           &:hover{
+            background-color: #337ab7;
+            } 
+            &:active{
+                color: #fff;
+            }
+          }
+        
+        } 
+    }
+}
+    .el-accoun-auth{
+        margin-top: 36px;
+        h5{
+            font-weight: bold;
+            margin: 2px 0 4px 6px;
+            
+        }
+        p{
+            margin: 10px 0 4px 6px;
+            font-size: 12px;
+        }
+    }
+    //子绝父相：儿子===#mainContent   父亲===#personal
+@media all and (max-width: 768px) {
+
+    #personal{
+        height: 798px;
+        position: relative;//子绝父相
+        left: 0px; //菜单打开
+        transition: all 1s; //启用过渡动画效果
+
+        //左侧
+        #leftTreeMenu{
+            position: absolute;
+            left: 0px;
+        }
+        
+        //右侧
+        #mainContent{
+            position: absolute;//子绝父相
+            right: -50%;
+
+            #btnOnOff{
+                position: absolute;
+                top: 0px;
+                z-index: 1000;
+                display: inline-block;
+            }
+        }
+    }
+    
+
+    #personal.active{
+        left: -50%; //菜单关闭
+    }
+}
+// 引入页脚
+@import url("./footer.less");

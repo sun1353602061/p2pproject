@@ -1,32 +1,28 @@
-<nav class="navbar-inverse">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span>028-86261949</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="./index.php">首页</a></li>
-              <!-- 登陆后 -->
-              <li><a href="#">小强</a></li>
-              <li><a href="#">赶快充值</a></li>
-              <li><a href="#">注销</a></li>
-              <!-- 登陆前 -->
-              <li><a href="./register.php">注册</a></li>
-              <li><a href="./login.php">登陆</a></li>
-              <li><a href="#">帮助</a></li>
-              <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./images/contract.png'/>">联系客户</a></li>
-            </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+<?php
+   require_once("./topNav.php")
+?>
+<!-- 导航 -->
+<nav class="navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
+    </div>
+      <ul class="nav navbar-nav" id="mainMenu">
+        <li><a href="./index.php?menuid=1">首页</a></li>
+        <li><a href="./invest.php?menuid=2">我要投资</a></li>
+        <li><a href="./borrow.php?menuid=3">我要借款</a></li>
+        <li class="active"><a href="./personal.php?menuid=4">个人中心</a></li>
+        <li><a href="#">新手指引</a></li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+  </div><!-- /.container-fluid -->
 </nav>
+<script>
+  //网址
+  var reqUrl=location.href;
+   //菜单的id
+   var menuid=reqUrl.split("=")[1];
+   //把菜单id对应所有的li添加active，兄弟元素移出active
+   $("#mainMenu li").eq(menuid-1).addClass("active").siblings("li").removeClass("active");
+</script>
